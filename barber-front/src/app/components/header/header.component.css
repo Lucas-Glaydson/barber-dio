@@ -1,0 +1,9 @@
+div{
+  background-color: #000049;
+  padding: 20px 60px;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

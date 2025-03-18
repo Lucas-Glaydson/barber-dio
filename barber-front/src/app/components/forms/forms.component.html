@@ -1,1 +1,18 @@
-<p>forms works!</p>
+<form action="">
+  <label for="firstName">First Name</label>
+  <input id="firstName" type="text" placeholder="Jhon" [(ngModel)]="firstName" name="firstName">
+
+  <label for="lastName">Last Name</label>
+  <input id="lastName" type="text" placeholder="Doe" [(ngModel)]="lastName" name="lastName">
+
+  <label for="barberName">Barber Name</label>
+  <input id="barberName" type="text" placeholder="Lênus" [(ngModel)]="barberName" name="barberName">
+
+  <label for="contact">Contact</label>
+  <input id="contact" type="text" placeholder="+55 81 90000-0000" [(ngModel)]="contact" name="contact">
+
+  <label for="date">Scheduling date</label>
+  <input id="date" type="datetime-local" [(ngModel)]="schedulingDate" name="schedulingDate">
+
+  <button type="submit" (click)="onSubmint()">Schedule</button>
+</form>

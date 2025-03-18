@@ -4,13 +4,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Date;
 
-@Data
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,4 +19,24 @@ public class Scheduling {
     private String lastName;
     private String contact;
     private Date schedulingDate;
+
+    public void setBarberName(String barberName) {
+        this.barberName = barberName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    public void setSchedulingDate(Date schedulingDate) {
+        this.schedulingDate = schedulingDate;
+    }
 }
