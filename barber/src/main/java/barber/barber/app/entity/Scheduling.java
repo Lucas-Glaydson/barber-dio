@@ -1,4 +1,4 @@
-package barber.barber.model;
+package barber.barber.app.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

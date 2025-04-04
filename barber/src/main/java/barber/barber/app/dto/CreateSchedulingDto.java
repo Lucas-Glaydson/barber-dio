@@ -1,4 +1,4 @@
-package barber.barber.dto;
+package barber.barber.app.dto;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;

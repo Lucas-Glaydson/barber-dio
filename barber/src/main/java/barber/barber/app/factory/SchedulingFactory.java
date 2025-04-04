@@ -1,7 +1,7 @@
-package barber.barber.factory;
+package barber.barber.app.factory;
 
-import barber.barber.dto.CreateSchedulingDto;
-import barber.barber.model.Scheduling;
+import barber.barber.app.dto.CreateSchedulingDto;
+import barber.barber.app.entity.Scheduling;
 
 public class SchedulingFactory {
     public static Scheduling transformSchedulingDto(CreateSchedulingDto schedulingDto) {

@@ -1,6 +1,6 @@
-package barber.barber.repository;
+package barber.barber.app.repository;
 
-import barber.barber.model.Scheduling;
+import barber.barber.app.entity.Scheduling;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
