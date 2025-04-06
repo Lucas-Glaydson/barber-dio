@@ -18,6 +18,6 @@ public class ScheduleExceptionHandler {
 
     @ExceptionHandler(FindSchedulingException.class)
     private ResponseEntity<String> findScheduleException() {
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new CreateSchedulingException().getMessage());
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new FindSchedulingException().getMessage());
     }
 }

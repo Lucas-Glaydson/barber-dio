@@ -5,6 +5,7 @@ import barber.barber.app.entity.Scheduling;
 import barber.barber.app.services.ISchedulingService;
 import barber.barber.app.services.SchedulingService;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +20,15 @@ public class SchedulingController {
     }
 
     @PostMapping()
-    public ResponseEntity<Scheduling> scheduling(@Valid @RequestBody CreateSchedulingDto createSchedulingDto) {
-        return ResponseEntity.ok().body(ischedulingService.createScheduling(createSchedulingDto));
+    public ResponseEntity<Scheduling> cretaeScheduling(@Valid @RequestBody CreateSchedulingDto createSchedulingDto) {
+        Scheduling newScheduling = ischedulingService.createScheduling(createSchedulingDto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(newScheduling);
+    }
+
+
+    @DeleteMapping()
+    public ResponseEntity<String> deleteScheduling(@RequestParam String id){
+        ischedulingService.deleteScheduling(id);
+        return ResponseEntity.notFound().build();
     }
 }
