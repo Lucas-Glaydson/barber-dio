@@ -89,7 +89,7 @@ docker compose up -d
 - **Dependency Inversion Principle (DIP)**: Encourages the use of interfaces to decouple high-level modules from low-level implementations.
 
 ---
-## 🔧 Points for Improvement
+## 🔧 Future improvements
 - **Caching**: Implement caching mechanisms to optimize performance and reduce database load.
 - **Database Migrations**: Add a tool like Flyway or Liquibase to manage and version database schema changes.
 - **Environment Variables**: Externalize configuration using environment variables to improve security and support multiple environments.
